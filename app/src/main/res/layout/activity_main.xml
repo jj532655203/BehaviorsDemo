@@ -26,14 +26,5 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slide_up_show_title_btn" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/slide_up_show_tabs_and_title_btn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:onClick="slideUpShowTabsAndTitle"
-        android:text="Slide up 2 show tabs and title"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/slide_down_show_title_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

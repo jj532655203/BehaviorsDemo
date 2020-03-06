@@ -16,11 +16,11 @@ import androidx.recyclerview.widget.RecyclerView;
  * 4.RecyclerView向下滑动并且顶部y值==titleView.getHeight(),此临界点取名叫downReach,达到此临界点之前的向下滑动无需嵌套滑动;
  * RecyclerView的顶部y值在 大于titleView.getHeight() /小于appBarLayout.getHeight()  之间时,titleView需要移动
  */
-public class SimpleTitleBehavior extends CoordinatorLayout.Behavior {
-    public SimpleTitleBehavior() {
+public class SlideUpShowTitleHeaderBehavior extends CoordinatorLayout.Behavior {
+    public SlideUpShowTitleHeaderBehavior() {
     }
 
-    public SimpleTitleBehavior(Context context, AttributeSet attrs) {
+    public SlideUpShowTitleHeaderBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

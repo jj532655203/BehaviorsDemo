@@ -12,11 +12,11 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
  * Jay
  * recyclerview只需要跟随textView移动即可
  */
-public class RecyclerViewBehavior extends CoordinatorLayout.Behavior {
-    public RecyclerViewBehavior() {
+public class SlideDownShowTitleRVBehavior extends CoordinatorLayout.Behavior {
+    public SlideDownShowTitleRVBehavior() {
     }
 
-    public RecyclerViewBehavior(Context context, AttributeSet attrs) {
+    public SlideDownShowTitleRVBehavior(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -28,7 +28,13 @@ public class RecyclerViewBehavior extends CoordinatorLayout.Behavior {
     @Override
     public boolean onDependentViewChanged(@NonNull CoordinatorLayout parent, @NonNull View child, @NonNull View dependency) {
 
-        float y = dependency.getHeight() + dependency.getTranslationY();
+        float dependencyY = dependency.getY();
+        if (dependencyY > 0) {
+            dependency.setY(0);
+            return true;
+        }
+
+        float y = dependency.getHeight() + dependencyY;
         if (y < 0) {
             y = 0;
         }

@@ -22,7 +22,7 @@ import com.fronttcapital.behaviorsdemo.R;
  * apparLayout使用默认behavior,默认是先于scrollingView角色滑动,recyclerview再跟随apparLayout移动
  * 以上都是使用MD自带的behavior
  * <p>
- * 只有textView是我们自定义的behavior(SimpleTitleBehavior),它依赖于recyclerview而按自定义behavior滑动
+ * 只有textView是我们自定义的behavior(SlideUpShowTitleHeaderBehavior),它依赖于recyclerview而按自定义behavior滑动
  */
 public class SlideUpShowTitleActivity extends AppCompatActivity {
 

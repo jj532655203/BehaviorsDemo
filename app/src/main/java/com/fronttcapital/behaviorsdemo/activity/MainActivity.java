@@ -24,7 +24,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, SlideDownShowTitleActivity.class));
     }
 
-    public void slideUpShowTabsAndTitle(View view) {
-        startActivity(new Intent(this, SlideUpShowTabsAndTitleActivity.class));
-    }
 }
