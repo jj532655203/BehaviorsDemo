@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BehaviorsDemo</string>
+    <string name="behavior_simple_tile">com.fronttcapital.behaviorsdemo.behavior.SimpleTitleBehavior</string>
 </resources>

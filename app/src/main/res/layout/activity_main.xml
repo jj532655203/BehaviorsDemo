@@ -4,15 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="10dp"
+    tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/slide_up_show_title_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="swipeUpShowTitle"
+        android:text="Swipe up 2 show title"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/slide_down_show_title_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="slideDownShowTitle"
+        android:text="Slide down 2 show title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slide_up_show_title_btn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/slide_up_show_tabs_and_title_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="slideUpShowTabsAndTitle"
+        android:text="Slide up 2 show tabs and title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slide_down_show_title_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
