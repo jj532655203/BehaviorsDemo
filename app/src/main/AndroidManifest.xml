@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.SlideUpShowTitleActivity" />
+        <activity android:name=".activity.SlideDownShowTitleActivity" />
     </application>
 
 </manifest>

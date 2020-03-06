@@ -12,9 +12,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fronttcapital.behaviorsdemo.R;
 import com.fronttcapital.behaviorsdemo.Divider15ItemDecoration;
+import com.fronttcapital.behaviorsdemo.R;
 
+/**
+ * Jay
+ * 本界面Coordinator容器内子view依次是appBarLayout,recyclerview,textView
+ * recyclerview使用AppBarLayout.ScrollingViewBehavior,角色是scrollingView,负责事件分发逻辑
+ * apparLayout使用默认behavior,默认是先于scrollingView角色滑动,recyclerview再跟随apparLayout移动
+ * 以上都是使用MD自带的behavior
+ * <p>
+ * 只有textView是我们自定义的behavior(SimpleTitleBehavior),它依赖于recyclerview而按自定义behavior滑动
+ */
 public class SlideUpShowTitleActivity extends AppCompatActivity {
 
     @Override
