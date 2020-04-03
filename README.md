@@ -1,5 +1,13 @@
 # 本项目的意义
 
+apk下载地址:
+
+https://phone-love-piano-public-ro.oss-cn-shenzhen.aliyuncs.com/demo-apk/behaviors_demo_debug_0403.apk
+
+或手机扫码下载
+
+![Image apk download qrcode](https://phone-love-piano-public-ro.oss-cn-shenzhen.aliyuncs.com/demo-apk/behaviors_demo_debug_apk_qrcode.png)
+
 1.如果想看Material Design的CoordinatorLayout结合自带的behaviors实现各种主流炫酷效果,请看https://github.com/saulmm/CoordinatorExamples.git,此项目据称作为代表作品之一参与GDG Summit 2015:'Tools and tps of
 the trade for the Android developer'
 
